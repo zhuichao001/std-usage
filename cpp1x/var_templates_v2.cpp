@@ -5,8 +5,9 @@
 
 // 变参的 sum 函数使用折叠表达式实现
 template<typename... Args>
-auto sum(Args... args) -> decltype((args + ...)) {
-    return (args + ...);
+auto sum(Args... args) -> decltype((... + args)) {
+    //return (args + ...);
+    return (... + args);
 }
 
 // 变参的打印日志函数

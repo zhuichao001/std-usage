@@ -16,6 +16,7 @@ void Print(T first, Args... args) {
     Print(args...);
 }
 
+
 int main() {
     Print(1, 2, 3, 4, 5);
     return 0;
